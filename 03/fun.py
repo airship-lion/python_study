@@ -164,4 +164,9 @@ def b():
     print("b")
 
 
+def a(name):
+    print("aaaa")
+
+print("----------------")
 a()
+

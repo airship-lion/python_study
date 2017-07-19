@@ -32,10 +32,16 @@ class Dog:
         print("deleter")
         del (self.__age)
 
+    def __call__(self, *args, **kwargs):
+        print("__call__", args, kwargs)
+
+    def __str__(self):
+        return self.__name
+
 
 dog = Dog()
 # dog.get_name()
-# dog.set_name("tom")
+dog.set_name("tom")
 # dog.get_name()
 a1 = dog.age
 dog.age = 22
@@ -44,3 +50,7 @@ a2 = dog.age
 del dog.age
 # dog.age
 # Dog.age
+dog(1, 2, 3, name="hhhh")
+print(Dog.__dict__)
+print(dog.__dict__)
+print(dog)

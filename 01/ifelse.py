@@ -8,3 +8,9 @@ else:
     print("wrong name or pwd")
     print("aaa")
 print("bbb")
+
+data=''
+if data:
+    print(True)
+else:
+    print(False)
